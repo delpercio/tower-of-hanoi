@@ -23,11 +23,6 @@ brainstorming:
 3) user wins when all 4 discs are in the 3rd tower
     - after each placement, the computer will check for a win
 
-
-
-
-
-
 ________________________________________________________________________________________________________________________________________________________
 
     Stevens Notes 6/24/2020
@@ -54,8 +49,20 @@ what has changed?
 What do we need?
 
     -we could throw a border on select where it adds a class that has some kind of style change on it(border, opacity, ect.) I would make sure to add it on the "childNode" that is      
-    being selected.
+    being selected. (from Drew - completed 6/24)
     -there is 1 bug. when you select an empty tower twice it throws an error, So we need to force the user to not do that, or create a work through where stop whatever event is     
     being triggered when we do that(I haven't really looked into it, 'im very tired lol)
     ----I really want to make sure we don't break this code so we need to be careful when we debug that.
     -We are essentially now at final touches. We polish anything extra we want and turn this bad boy in, and take a nap, maybe practice for whiteboards
+
+    _____________________________________________________
+
+Drew's notes, 6/24/2020
+
+I love it. I see how you used clone to return that div in order to move it, which was something I was having trouble figuring out. Also, good call on the lastElementChild usage. I think I was getting confused by trying to use the disk specifically.
+
+- I have added a small feature to add a different color border when the disk is selected, which goes away when it is dropped. During pickup, I just added a new border style to the clone disk, and at the beginning of the drop function, I apply a blank string to the border style, which returns it to the defaults from css.
+
+- I just tested with the new greenyellow border, and it doesn't seem to be pooping out when you click an empty tower twice. I'll talk to you about it when we get together, but I think we have a final program!
+
+- I also included a button to reset all disks back to tower1, so the user can play multiple times
