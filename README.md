@@ -1,4 +1,5 @@
-pages: https://drewskiiiiiiiii.gitlab.io/tower-of-hanoi
+<!-- pages: https://drewskiiiiiiiii.gitlab.io/tower-of-hanoi -->
+New Pages :
 
 Team: Drew Sexton, Steven Delpercio
 
@@ -23,6 +24,11 @@ brainstorming:
     - after each placement, the computer will check for a win
 
 
+
+
+
+
+________________________________________________________________________________________________________________________________________________________
 
     Stevens Notes 6/24/2020
 
