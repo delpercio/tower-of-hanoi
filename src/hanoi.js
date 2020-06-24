@@ -60,9 +60,9 @@ const drop = function (event) {
     }
     else {
         tower.appendChild(cloneDisk)
-        checkWinner() 
+        
      }
-
+     checkWinner() 
 }
 
 

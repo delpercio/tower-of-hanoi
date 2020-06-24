@@ -1,5 +1,5 @@
 <!-- pages: https://drewskiiiiiiiii.gitlab.io/tower-of-hanoi -->
-New Pages :
+New Pages : https://percio.gitlab.io/the-tower-of-hanoi/
 
 Team: Drew Sexton, Steven Delpercio
 
