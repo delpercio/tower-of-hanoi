@@ -1,0 +1,64 @@
+:root {
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+body {
+    max-width: 900px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+#disc1 {
+    height: 15%;
+    width: 50%;
+    background-color: green;
+}
+
+#disc2 {
+    height: 15%;
+    width: 63%;
+    background-color: gold;
+}
+
+#disc3 {
+    height: 15%;
+    width: 76%;
+    background-color: slateblue;
+}
+
+#disc4 {
+    height: 15%;
+    width: 89%;
+    background-color: tomato;
+}
+
+.disc {
+    align-self: center;
+    border-radius: 25px;
+    border: 2px solid rgb(73, 73, 73);
+}
+
+#gameBoard {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px green dashed;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.tower {
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
