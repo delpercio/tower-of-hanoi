@@ -36,6 +36,7 @@ function checkWinner() {
 
 //This is where the magic happens decides the turn, and throws the event per turn.
 function handleClick(event) {
+    //added && to fix an error we received when selecting empty towers
     if ((currentRole === 'pickup') && (event.currentTarget.childElementCount !== 0)) {
         pickUp(event)
         currentRole = nextRole
