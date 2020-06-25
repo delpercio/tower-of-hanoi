@@ -77,5 +77,10 @@ const drop = function(event) {
         tower.appendChild(cloneDisk)
 
     }
-    checkWinner()
+    setTimeout(checkWinner, 1)
+        //setTimeout delays this function by 1ms
+        //I noticed that the winning alert was coming up before 
+        //the final disc appeared in the tower, so I just delayed 
+        //the check winner function to give it time to finish
+        //-Drew 6/25/2020
 }
