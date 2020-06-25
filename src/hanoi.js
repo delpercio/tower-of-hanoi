@@ -36,28 +36,30 @@ function checkWinner() {
 
 //This is where the magic happens decides the turn, and throws the event per turn.
 function handleClick(event) {
-    if (currentRole === 'pickup') {
-
+    if ((currentRole === 'pickup') && (event.currentTarget.childElementCount !== 0)) {
         pickUp(event)
         currentRole = nextRole
-    } else if (nextRole === currentRole) {
+    } else if (currentRole === 'drop') {
         drop(event)
         currentRole = "pickup"
+    } else {
+        alert('You cannot select and empty tower');
+        currentRole = 'pickup'
     }
 }
 
 //Pick up function
 const pickUp = function(event) {
-
     const tower = event.currentTarget
-    cloneDisk = tower.lastElementChild
-    console.log(tower)
-    console.log(cloneDisk)
-    console.log("YOUHAVEpicked")
+    cloneDisk = tower.lastElementChild;
+    console.log(tower);
+    console.log(cloneDisk);
+    console.log("YOUHAVEpicked");
     cloneDisk.style.border = '2px greenyellow dashed'
         //adds different border to show selection
     return cloneDisk
 }
+
 
 //drop function, where the remainder of the magic happens, engages the rules, and default for empty div.
 const drop = function(event) {
