@@ -4,7 +4,6 @@ const disc1 = document.getElementById('disc1');
 const disc2 = document.getElementById('disc2');
 const disc3 = document.getElementById('disc3');
 const disc4 = document.getElementById('disc4');
-//currentRole and nextRole idea was something Randy showed us during demo a few times this week, and worked well with our code
 let currentRole = 'pickup';
 let nextRole = 'drop';
 
